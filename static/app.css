@@ -1,0 +1,114 @@
+body {
+  font-size: 1rem;
+  font-family: sans-serif;
+  background-color: gainsboro;
+}
+
+* {
+  border: 1px hidden gainsboro;
+  text-shadow: 0.2em 0.2em 0.4em gray;
+}
+
+#heading {
+  font-family: cursive;
+  font-size: 1.7rem;
+  text-align: center;
+  text-shadow: 0.5em 0.5em 1em gray;
+}
+
+.Binary-Selection {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.Wynik,
+#wynik {
+  margin: 0px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.Binary-Selection {
+  height: 3rem;
+  font-size: 3rem;
+}
+
+/* #wynik {
+  font-size: 1.5rem;
+} */
+
+.result {
+  font-size: 2rem;
+  font-weight: bolder;
+  letter-spacing: 0.5rem;
+}
+
+.Binary-Value {
+  margin: 0.5rem;
+  font-size: 1.5rem;
+  height: 3rem;
+  width: 5rem;
+  background-color: silver;
+  transition: all 0.2s ease;
+}
+
+.Binary-Value:hover,
+.Binary-Value:focus {
+  height: 3.5rem;
+  background-color: lightgray;
+}
+
+input[type="submit"] {
+  font-size: 1rem;
+  font-weight: bold;
+  height: 3rem;
+  width: 5rem;
+}
+
+#formula {
+  margin: 0;
+  padding: 0;
+  line-height: 0.5rem;
+  font-family: cursive;
+  font-size: 2rem;
+  text-align: center;
+}
+
+p#suma strong {
+  font-size: larger;
+}
+
+#submit {
+  margin: 1em;
+  width: 15rem;
+  height: 5rem;
+  font-size: 2rem;
+  color: black;
+  letter-spacing: 0.1em;
+  background-color: lightgray;
+  border-top: 1px solid white;
+  border-left: 1px solid white;
+  border-bottom: 1px solid black;
+  border-right: 1px solid black;
+  border-radius: 2.5rem;
+  box-shadow: 0.5em 0.5em 0.9em gray;
+  transition: all 0.2s ease;
+}
+
+#submit:hover {
+  background-color: #c1c1c1;
+}
+#submit:focus {
+  background-color: #c1c1c1;
+}
+
+#submit:active {
+  background-color: #c1c1c1;
+  transform: scale(0.98);
+}

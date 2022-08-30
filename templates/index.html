@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./static/app.css" />
+    <title>Binary to Decimal</title>
+  </head>
+
+  <body>
+    <div id="heading">
+      <h1><em>Convert from Binary to Decimal</em></h1>
+    </div>
+
+    <br />
+    <section id="main-Section">
+      <form id="binary-Number" action="/" method="GET">
+        <div class="Binary-Selection">
+          {% for i in range(8) %}
+          <select name="{{ i }}" class="Binary-Value">
+            <option selected>0</option>
+            <option>1</option>
+          </select>
+          {% endfor %}
+        </div>
+
+        <div class="Wynik">
+          <div id="wynik">
+            <p class="Decimal-Number result">
+              {% for i in (7,6,5,4,3,2,1,0) %} {{ binaryNumber[i] }} {% endfor
+              %}
+            </p>
+            <div id="formula">
+              <p class="Decimal-Number">
+                {% for x in (7,6,5,4,3,2,1,0) %} 
+                  {% if x == 7%}
+                    ({{binaryNumber[x] }} x 2<sup>{{ x }}</sup>) 
+                  {% else %} 
+                    &plus;({{binaryNumber[x] }} x 2<sup>{{ x }}</sup>) 
+                  {% endif %}
+                {% endfor %}
+              </p>
+              <p>&equals;</p>
+              <p>
+                {% for z in (7,6,5,4,3,2,1,0) %} 
+                  {% if z ==7 %} 
+                    {{ aa[z] }}
+                  {% else %} 
+                    &plus; {{ aa[z] }} 
+                  {% endif %} 
+                {% endfor %}
+              </p>
+              <p id="suma">&equals; <strong>{{ wynik }}</strong></p>
+            </div>
+          </div>
+          <input id="submit" type="submit" value="Calculate" />
+        </div>
+      </form>
+    </section>
+  </body>
+</html>
